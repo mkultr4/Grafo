@@ -8,21 +8,20 @@ just call:
 
 grafo = new Grafo(container, points, radius, width,height,opacity);
 
-container: the container in which anger the chart
-points : format of point [{x,y},{x,y}]
-radius: radius of the circles
-width: width of the stage where the graphs will be drawn
-height: height of the stage where the graphs will be drawn
-opacity: opacity of the graphs
+container: the container in which anger the chart<br>
+points : format of point [{x,y},{x,y}]<br>
+radius: radius of the circles<br>
+width: width of the stage where the graphs will be drawn<br>
+height: height of the stage where the graphs will be drawn<br>
+opacity: opacity of the graphs<br>
 
 <h2>Functions</h2>
 
-rePaint: repaint the graphs.
-
-setPoints(array)= set new collection of points, after that call repaint.  
-self.setSize(width, height)= set size of stage, after that call repaint.
-self.setRadius(radius)= set radius of the circles, after that call repaint.
-self.setOpacity(opacity)= set the opacity, after that call repaint.
+rePaint: repaint the graphs.<br>
+setPoints(array)= set new collection of points, after that call repaint.  <br>
+self.setSize(width, height)= set size of stage, after that call repaint.<br>
+self.setRadius(radius)= set radius of the circles, after that call repaint.<br>
+self.setOpacity(opacity)= set the opacity, after that call repaint.<br>
 
 
 <h2>Usage</h2>

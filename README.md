@@ -1,31 +1,60 @@
-Grafo with Kinetic 
+Grafo Plugin Jquery with Kinetic 
 ------------------
 
-I usage https://github.com/joker-x/canvas-grafocondorcet from  joker-x,
-for graph drawing with the lib kinetic.
+For this project use https://github.com/joker-x/canvas-grafocondorcet from  joker-x.
+For graphical use Kinetic. <a href="http://agavestorm.com/kineticjs/">HomePage</a>
 
 just call:
 
-grafo = new Grafo(container, points, radius, width,height,opacity);
+$(container).grafo(options)
 
-container: the container in which anger the chart<br>
-points : format of point [{x,y},{x,y}]<br>
-radius: radius of the circles<br>
-width: width of the stage where the graphs will be drawn<br>
-height: height of the stage where the graphs will be drawn<br>
-opacity: opacity of the graphs<br>
+
+<h2>Options Default and seteables</h2>
+   
+    options = {
+        //Options 
+        radius: 20,
+        opacity: 1,
+        width: 600,
+        height: 600,
+        points: [],
+        /*Circle Options*/
+        color:"rgba(200,0,0,0.5)",
+        stroke: '#fff',
+        strokeWidth: 1,
+        /*Options of the label*/
+        fontSize :11,
+        fontWeight:"bold",
+        fontFamily:"calibri",
+        fontColor:"#fff",
+        /*Options of the lines*/
+        strokeLine: '#f00',
+        strokeWidthLine: 1,
+
+    };<br>
+
+-points: array of points("[{x,y,label*}]"). Label is optional.<br>
+
 
 <h2>Functions</h2>
 
-rePaint: repaint the graphs.<br>
-setPoints(array)= set new collection of points, after that call repaint.  <br>
-self.setSize(width, height)= set size of stage, after that call repaint.<br>
-self.setRadius(radius)= set radius of the circles, after that call repaint.<br>
-self.setOpacity(opacity)= set the opacity, after that call repaint.<br>
+To call function :<br>
+var grafo = $(container).grafo(options).data('grafo');
+<br>
+
+Function to reinit grafo: grafo.rePaint();<br>
+Function to set option: grafo.setOption(option,value);<br>
+Function to get option: grafo.getOption(option);<br>
+<br>
+<h4>Examples</h4>
+grafo.setOption('opacity',opacity/100);<br>
+grafo.setOption('radius',radius);<br>
+grafo.setOption('points',points);<br>
+
 
 
 <h2>Usage</h2>
-Add grafos.js, and kinetic.
+Add grafo.jquery.js, and kinetic.
     
 I made according to my problem, I hope someone will serve you.
 

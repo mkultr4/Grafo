@@ -58,7 +58,8 @@ Add grafo.jquery.js, and kinetic.
    
 <h2>Example</h2>
 <a href="http://mkultr4.github.io/Grafo/">A example</a>
-I made according to my problem, I hope someone will serve you.
+
+<br>I made according to my problem, I hope someone will serve you.
 
 cheers
 
